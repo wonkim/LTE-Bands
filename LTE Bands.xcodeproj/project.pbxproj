@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E4A262914F39C1700FC9287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262814F39C1700FC9287 /* UIKit.framework */; };
+		7E4A262B14F39C1700FC9287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262A14F39C1700FC9287 /* Foundation.framework */; };
+		7E4A262D14F39C1700FC9287 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262C14F39C1700FC9287 /* CoreGraphics.framework */; };
+		7E4A263314F39C1700FC9287 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E4A263114F39C1700FC9287 /* InfoPlist.strings */; };
+		7E4A263514F39C1700FC9287 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A263414F39C1700FC9287 /* main.m */; };
+		7E4A263914F39C1700FC9287 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A263814F39C1700FC9287 /* AppDelegate.m */; };
+		7E4A263C14F39C1700FC9287 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4A263A14F39C1700FC9287 /* MainStoryboard.storyboard */; };
+		7E4A263F14F39C1700FC9287 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A263E14F39C1700FC9287 /* MasterViewController.m */; };
+		7E4A264214F39C1700FC9287 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A264114F39C1700FC9287 /* DetailViewController.m */; };
+		7E4A264A14F39C1700FC9287 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A264914F39C1700FC9287 /* SenTestingKit.framework */; };
+		7E4A264B14F39C1700FC9287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262814F39C1700FC9287 /* UIKit.framework */; };
+		7E4A264C14F39C1700FC9287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262A14F39C1700FC9287 /* Foundation.framework */; };
+		7E4A265414F39C1700FC9287 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E4A265214F39C1700FC9287 /* InfoPlist.strings */; };
+		7E4A265714F39C1800FC9287 /* LTE_BandsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A265614F39C1800FC9287 /* LTE_BandsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E4A264D14F39C1700FC9287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E4A261B14F39C1700FC9287 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E4A262314F39C1700FC9287;
+			remoteInfo = "LTE Bands";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E4A262414F39C1700FC9287 /* LTE Bands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LTE Bands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4A262814F39C1700FC9287 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E4A262A14F39C1700FC9287 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E4A262C14F39C1700FC9287 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E4A263014F39C1700FC9287 /* LTE Bands-Info.plist */ = {isa = PBXFileReference; path = "LTE Bands-Info.plist"; sourceTree = "<group>"; };
+		7E4A263214F39C1700FC9287 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E4A263414F39C1700FC9287 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E4A263614F39C1700FC9287 /* LTE Bands-Prefix.pch */ = {isa = PBXFileReference; path = "LTE Bands-Prefix.pch"; sourceTree = "<group>"; };
+		7E4A263714F39C1700FC9287 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		7E4A263814F39C1700FC9287 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7E4A263B14F39C1700FC9287 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7E4A263D14F39C1700FC9287 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		7E4A263E14F39C1700FC9287 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		7E4A264014F39C1700FC9287 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		7E4A264114F39C1700FC9287 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		7E4A264814F39C1700FC9287 /* LTE BandsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LTE BandsTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4A264914F39C1700FC9287 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7E4A265114F39C1700FC9287 /* LTE BandsTests-Info.plist */ = {isa = PBXFileReference; path = "LTE BandsTests-Info.plist"; sourceTree = "<group>"; };
+		7E4A265314F39C1700FC9287 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E4A265514F39C1700FC9287 /* LTE_BandsTests.h */ = {isa = PBXFileReference; path = LTE_BandsTests.h; sourceTree = "<group>"; };
+		7E4A265614F39C1800FC9287 /* LTE_BandsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTE_BandsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E4A262114F39C1700FC9287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4A262914F39C1700FC9287 /* UIKit.framework in Frameworks */,
+				7E4A262B14F39C1700FC9287 /* Foundation.framework in Frameworks */,
+				7E4A262D14F39C1700FC9287 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4A264414F39C1700FC9287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4A264A14F39C1700FC9287 /* SenTestingKit.framework in Frameworks */,
+				7E4A264B14F39C1700FC9287 /* UIKit.framework in Frameworks */,
+				7E4A264C14F39C1700FC9287 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E4A261914F39C1700FC9287 = {
+			isa = PBXGroup;
+			children = (
+				7E4A262E14F39C1700FC9287 /* LTE Bands */,
+				7E4A264F14F39C1700FC9287 /* LTE BandsTests */,
+				7E4A262714F39C1700FC9287 /* Frameworks */,
+				7E4A262514F39C1700FC9287 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E4A262514F39C1700FC9287 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E4A262414F39C1700FC9287 /* LTE Bands.app */,
+				7E4A264814F39C1700FC9287 /* LTE BandsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E4A262714F39C1700FC9287 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E4A262814F39C1700FC9287 /* UIKit.framework */,
+				7E4A262A14F39C1700FC9287 /* Foundation.framework */,
+				7E4A262C14F39C1700FC9287 /* CoreGraphics.framework */,
+				7E4A264914F39C1700FC9287 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E4A262E14F39C1700FC9287 /* LTE Bands */ = {
+			isa = PBXGroup;
+			children = (
+				7E4A263714F39C1700FC9287 /* AppDelegate.h */,
+				7E4A263814F39C1700FC9287 /* AppDelegate.m */,
+				7E4A263A14F39C1700FC9287 /* MainStoryboard.storyboard */,
+				7E4A263D14F39C1700FC9287 /* MasterViewController.h */,
+				7E4A263E14F39C1700FC9287 /* MasterViewController.m */,
+				7E4A264014F39C1700FC9287 /* DetailViewController.h */,
+				7E4A264114F39C1700FC9287 /* DetailViewController.m */,
+				7E4A262F14F39C1700FC9287 /* Supporting Files */,
+			);
+			path = "LTE Bands";
+			sourceTree = "<group>";
+		};
+		7E4A262F14F39C1700FC9287 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E4A263014F39C1700FC9287 /* LTE Bands-Info.plist */,
+				7E4A263114F39C1700FC9287 /* InfoPlist.strings */,
+				7E4A263414F39C1700FC9287 /* main.m */,
+				7E4A263614F39C1700FC9287 /* LTE Bands-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E4A264F14F39C1700FC9287 /* LTE BandsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E4A265514F39C1700FC9287 /* LTE_BandsTests.h */,
+				7E4A265614F39C1800FC9287 /* LTE_BandsTests.m */,
+				7E4A265014F39C1700FC9287 /* Supporting Files */,
+			);
+			path = "LTE BandsTests";
+			sourceTree = "<group>";
+		};
+		7E4A265014F39C1700FC9287 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E4A265114F39C1700FC9287 /* LTE BandsTests-Info.plist */,
+				7E4A265214F39C1700FC9287 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E4A262314F39C1700FC9287 /* LTE Bands */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E4A265A14F39C1800FC9287 /* Build configuration list for PBXNativeTarget "LTE Bands" */;
+			buildPhases = (
+				7E4A262014F39C1700FC9287 /* Sources */,
+				7E4A262114F39C1700FC9287 /* Frameworks */,
+				7E4A262214F39C1700FC9287 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LTE Bands";
+			productName = "LTE Bands";
+			productReference = 7E4A262414F39C1700FC9287 /* LTE Bands.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E4A264714F39C1700FC9287 /* LTE BandsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E4A265D14F39C1800FC9287 /* Build configuration list for PBXNativeTarget "LTE BandsTests" */;
+			buildPhases = (
+				7E4A264314F39C1700FC9287 /* Sources */,
+				7E4A264414F39C1700FC9287 /* Frameworks */,
+				7E4A264514F39C1700FC9287 /* Resources */,
+				7E4A264614F39C1700FC9287 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E4A264E14F39C1700FC9287 /* PBXTargetDependency */,
+			);
+			name = "LTE BandsTests";
+			productName = "LTE BandsTests";
+			productReference = 7E4A264814F39C1700FC9287 /* LTE BandsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E4A261B14F39C1700FC9287 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Nokia Siemens Networks";
+			};
+			buildConfigurationList = 7E4A261E14F39C1700FC9287 /* Build configuration list for PBXProject "LTE Bands" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E4A261914F39C1700FC9287;
+			productRefGroup = 7E4A262514F39C1700FC9287 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E4A262314F39C1700FC9287 /* LTE Bands */,
+				7E4A264714F39C1700FC9287 /* LTE BandsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E4A262214F39C1700FC9287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4A263314F39C1700FC9287 /* InfoPlist.strings in Resources */,
+				7E4A263C14F39C1700FC9287 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4A264514F39C1700FC9287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4A265414F39C1700FC9287 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E4A264614F39C1700FC9287 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E4A262014F39C1700FC9287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4A263514F39C1700FC9287 /* main.m in Sources */,
+				7E4A263914F39C1700FC9287 /* AppDelegate.m in Sources */,
+				7E4A263F14F39C1700FC9287 /* MasterViewController.m in Sources */,
+				7E4A264214F39C1700FC9287 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E4A264314F39C1700FC9287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4A265714F39C1800FC9287 /* LTE_BandsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E4A264E14F39C1700FC9287 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E4A262314F39C1700FC9287 /* LTE Bands */;
+			targetProxy = 7E4A264D14F39C1700FC9287 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E4A263114F39C1700FC9287 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E4A263214F39C1700FC9287 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E4A263A14F39C1700FC9287 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E4A263B14F39C1700FC9287 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		7E4A265214F39C1700FC9287 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E4A265314F39C1700FC9287 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E4A265814F39C1800FC9287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E4A265914F39C1800FC9287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E4A265B14F39C1800FC9287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LTE Bands/LTE Bands-Prefix.pch";
+				INFOPLIST_FILE = "LTE Bands/LTE Bands-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E4A265C14F39C1800FC9287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LTE Bands/LTE Bands-Prefix.pch";
+				INFOPLIST_FILE = "LTE Bands/LTE Bands-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7E4A265E14F39C1800FC9287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LTE Bands.app/LTE Bands";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LTE Bands/LTE Bands-Prefix.pch";
+				INFOPLIST_FILE = "LTE BandsTests/LTE BandsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7E4A265F14F39C1800FC9287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LTE Bands.app/LTE Bands";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LTE Bands/LTE Bands-Prefix.pch";
+				INFOPLIST_FILE = "LTE BandsTests/LTE BandsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E4A261E14F39C1700FC9287 /* Build configuration list for PBXProject "LTE Bands" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E4A265814F39C1800FC9287 /* Debug */,
+				7E4A265914F39C1800FC9287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E4A265A14F39C1800FC9287 /* Build configuration list for PBXNativeTarget "LTE Bands" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E4A265B14F39C1800FC9287 /* Debug */,
+				7E4A265C14F39C1800FC9287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7E4A265D14F39C1800FC9287 /* Build configuration list for PBXNativeTarget "LTE BandsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E4A265E14F39C1800FC9287 /* Debug */,
+				7E4A265F14F39C1800FC9287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E4A261B14F39C1700FC9287 /* Project object */;
+}
