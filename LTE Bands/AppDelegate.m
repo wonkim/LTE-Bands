@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "BandInfoDataController.h"
+#import "MasterViewController.h"
 
 @implementation AppDelegate
 
@@ -14,7 +16,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    
+    MasterViewController *firstViewController = (MasterViewController*)[[navigationController viewControllers] objectAtIndex:0];
+    
+    BandInfoDataController *dataController = [[BandInfoDataController alloc] init];
+    firstViewController.dataController = dataController;
+    
     return YES;
 }
 							
