@@ -80,12 +80,12 @@
     for (BandInfo *bandInfo in self.bandInfoList) {
         for (CarrierInfo *carrier in bandInfo.carriers) {
             NSRange r = [carrier.name rangeOfString:filter options:NSCaseInsensitiveSearch];
-            if (r.location != NSNotFound) {
+            if (r.location == 0) {
                 [filteredBandInfoList addObject:bandInfo];
                 break;
             }
             r = [carrier.country rangeOfString:filter options:NSCaseInsensitiveSearch];
-            if (r.location != NSNotFound) {
+            if (r.location == 0) {
                 [filteredBandInfoList addObject:bandInfo];
                 break;
             }
