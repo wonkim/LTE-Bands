@@ -25,9 +25,9 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>Glo Mobile</string>
 					<key>Country</key>
-					<string></string>
+					<string>Nigeria</string>
 				</dict>
 			</array>
 		</dict>
@@ -52,9 +52,9 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>Metro PCS</string>
 					<key>Country</key>
-					<string></string>
+					<string>US</string>
 				</dict>
 			</array>
 		</dict>
@@ -79,9 +79,63 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>Telstra</string>
 					<key>Country</key>
-					<string></string>
+					<string>Australia</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Proximus</string>
+					<key>Country</key>
+					<string>Belgium</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Elisa</string>
+					<key>Country</key>
+					<string>Finland</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>T-Mobile</string>
+					<key>Country</key>
+					<string>Hungary</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>TeliaSonera / LMT</string>
+					<key>Country</key>
+					<string>Lithuania</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>TeliaSonera / Omnitel</string>
+					<key>Country</key>
+					<string>Lithuania</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Centernet Wrodzinie / Mobyland / Eutelia</string>
+					<key>Country</key>
+					<string>Poland</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>MobileOne / M1</string>
+					<key>Country</key>
+					<string>Singapole</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Singapore Telecommunications / SingTel</string>
+					<key>Country</key>
+					<string>Singapole</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>KT</string>
+					<key>Country</key>
+					<string>Korea</string>
 				</dict>
 			</array>
 		</dict>
@@ -106,7 +160,37 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string>AT&amp;T</string>
+					<string>Rogers Wireless</string>
+					<key>Country</key>
+					<string>Canada</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Telus</string>
+					<key>Country</key>
+					<string>Canada</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>AT&amp;T Mobility</string>
+					<key>Country</key>
+					<string>Puerto Rico</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>AT&amp;T Mobility</string>
+					<key>Country</key>
+					<string>US</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Metro PCS</string>
+					<key>Country</key>
+					<string>US</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Cricket Wireless</string>
 					<key>Country</key>
 					<string>US</string>
 				</dict>
@@ -193,9 +277,111 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>K-Telecom</string>
 					<key>Country</key>
-					<string></string>
+					<string>Armenia</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Telekom Austria</string>
+					<key>Country</key>
+					<string>Austria</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>T-Mobile</string>
+					<key>Country</key>
+					<string>Austria</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>TeliaSonera</string>
+					<key>Country</key>
+					<string>Denmark</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>EMT</string>
+					<key>Country</key>
+					<string>Estonia</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Elisa</string>
+					<key>Country</key>
+					<string>Finland</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>TeliaSonera</string>
+					<key>Country</key>
+					<string>Finland</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>O2</string>
+					<key>Country</key>
+					<string>Germany</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>CSL</string>
+					<key>Country</key>
+					<string>Hong Kong</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Saima-Telecom</string>
+					<key>Country</key>
+					<string>Kyrgyzstan</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>TeliaSonera / Omnitel</string>
+					<key>Country</key>
+					<string>Lithuania</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>TeliaSonera / Netcom</string>
+					<key>Country</key>
+					<string>Norway</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Saudi Telecom</string>
+					<key>Country</key>
+					<string>Saudi Arabia</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>M1 / Mobile One</string>
+					<key>Country</key>
+					<string>Singapole</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Telenor / Tele2</string>
+					<key>Country</key>
+					<string>Sweden</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>TeliaSonera</string>
+					<key>Country</key>
+					<string>Sweden</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>MTS-Uzbekistan</string>
+					<key>Country</key>
+					<string>Uzbekistan</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>UCell / TeliaSonera</string>
+					<key>Country</key>
+					<string>Uzbekistan</string>
 				</dict>
 			</array>
 		</dict>
@@ -223,6 +409,12 @@
 					<string>KT</string>
 					<key>Country</key>
 					<string>Korea</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>Telenor / Tele2 / Net4Mobility</string>
+					<key>Country</key>
+					<string>Sweden</string>
 				</dict>
 			</array>
 		</dict>
@@ -359,6 +551,12 @@
 					<key>Country</key>
 					<string>US</string>
 				</dict>
+				<dict>
+					<key>Name</key>
+					<string>MTS-Uzbekistan</string>
+					<key>Country</key>
+					<string>Uzbekistan</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -463,9 +661,9 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>AT&amp;T Mobility</string>
 					<key>Country</key>
-					<string></string>
+					<string>US</string>
 				</dict>
 			</array>
 		</dict>
@@ -490,9 +688,21 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>T-Mobile / Deutsche Telekom</string>
 					<key>Country</key>
-					<string></string>
+					<string>Germany</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>O2 / Telefonica</string>
+					<key>Country</key>
+					<string>Germany</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>TeliaSonera</string>
+					<key>Country</key>
+					<string>Sweden</string>
 				</dict>
 			</array>
 		</dict>
@@ -517,9 +727,9 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>Vodafone</string>
 					<key>Country</key>
-					<string></string>
+					<string>Germany</string>
 				</dict>
 			</array>
 		</dict>
