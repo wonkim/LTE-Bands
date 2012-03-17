@@ -15,7 +15,6 @@
 @end
 
 @implementation DetailViewController
-
 @synthesize band = _band;
 
 #pragma mark - Managing the detail item
@@ -59,7 +58,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) {
-        return 3;
+        return 5;
     } else {
         return [self.band.carriers count];
     }
@@ -82,6 +81,14 @@
             case 2:
                 [cell.textLabel setText:@"Down"];
                 [cell.detailTextLabel setText:[NSString stringWithFormat:@"%d ~ %d Mhz", self.band.downFreq1, self.band.downFreq2]];
+                break;
+            case 3:
+                [cell.textLabel setText:@"Width"];
+                [cell.detailTextLabel setText:[NSString stringWithFormat:@"%d Mhz", self.band.bandWidth]];
+                break;
+            case 4:
+                [cell.textLabel setText:@"Gap"];
+                [cell.detailTextLabel setText:[NSString stringWithFormat:@"%d Mhz", self.band.bandGap]];
                 break;
         }
         

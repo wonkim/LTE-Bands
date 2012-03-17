@@ -18,8 +18,10 @@
 @synthesize downFreq1 = _downFreq1;
 @synthesize downFreq2 = _downFreq2;
 @synthesize carriers = _carriers;
+@synthesize bandWidth = _bandWidth;
+@synthesize bandGap = _bandGap;
 
-- (id)initWithBandNumber:(int)number bandName:(NSString *)name upperFreq1:(int)upFreq1 upperFre2:(int)upFreq2 downFreq1:(int)downFreq1 downFreq2:(int)downFreq2 {
+- (id)initWithBandNumber:(int)number bandName:(NSString *)name upperFreq1:(int)upFreq1 upperFre2:(int)upFreq2 downFreq1:(int)downFreq1 downFreq2:(int)downFreq2 bandWidth:(int)width bandGap:(int)gap {
     
     self = [super init];
     if (self) {
@@ -29,6 +31,8 @@
         _upFreq2 = upFreq2;
         _downFreq1 = downFreq1;
         _downFreq2 = downFreq2;
+        _bandWidth = width;
+        _bandGap = gap;
         _carriers = [[NSMutableArray alloc] init];
         return self;
     }

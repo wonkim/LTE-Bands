@@ -11,6 +11,9 @@
 #import "BandInfo.h"
 #import "BandInfoDataController.h"
 
+#define LTE_BAND_CELL           @"LTEBandCell"
+#define SHOW_BAND_DETAILS_SEGUE @"ShowBandDetails"
+
 @implementation MasterViewController
 
 @synthesize dataController = _dataController;
@@ -45,16 +48,30 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.dataController countOfBandInfoList];
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return [self.dataController countOfFilteredBandInfoList];
+    } else {
+        return [self.dataController countOfBandInfoList];
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier = @"LTEBandCell";
+    static NSString *cellIdentifier = LTE_BAND_CELL;
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
     
-    BandInfo *bandInfoAtIndex = [self.dataController objectInBandInfoListAtIndex:indexPath.row];
+    BandInfo *bandInfoAtIndex;
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        bandInfoAtIndex = [self.dataController objectInFilteredBandInfoListAtIndex:indexPath.row];
+    } else {
+        bandInfoAtIndex = [self.dataController objectInBandInfoListAtIndex:indexPath.row];
+    }
+    
     [[cell textLabel] setText:[NSString stringWithFormat:@"Band %d", bandInfoAtIndex.bandNumber]];
     [[cell detailTextLabel] setText:bandInfoAtIndex.bandName];
     
@@ -66,30 +83,45 @@
     return NO;
 }
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        [self performSegueWithIdentifier:SHOW_BAND_DETAILS_SEGUE sender:tableView];
+    }
 }
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"ShowBandDetails"]) {
+    BOOL filtered;
+    UITableView *tv;
+    
+    if (sender == self.searchDisplayController.searchResultsTableView) {
+        filtered = YES;
+        tv = (UITableView*)sender;
+    } else {
+        filtered = NO;
+        tv = self.tableView;
+    }
+    
+    if ([[segue identifier] isEqualToString:SHOW_BAND_DETAILS_SEGUE]) {
         DetailViewController *detailViewController = [segue destinationViewController];
-        BandInfo *band = [self.dataController objectInBandInfoListAtIndex:[self.tableView indexPathForSelectedRow].row];
+        BandInfo *band;
+        if (filtered) {
+            band = [self.dataController objectInFilteredBandInfoListAtIndex:[tv indexPathForSelectedRow].row];
+        } else {
+            band = [self.dataController objectInBandInfoListAtIndex:[tv indexPathForSelectedRow].row];
+        }
         detailViewController.band = band;
         detailViewController.title = [NSString stringWithFormat:@"Band %d", band.bandNumber];
     }
+}
+
+#pragma mark - UISearchDisplayDelegate
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self.dataController setFilterString:searchString];
+    return YES;
 }
 
 @end

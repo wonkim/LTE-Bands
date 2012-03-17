@@ -10,7 +10,7 @@
 
 @class BandInfoDataController;
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <UISearchDisplayDelegate, UISearchBarDelegate>
 
 @property (nonatomic, strong) BandInfoDataController *dataController;
 

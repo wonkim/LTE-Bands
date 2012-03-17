@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E097E9A15143000005FDA95 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 7E097E9915143000005FDA95 /* TODO */; };
 		7E4A262914F39C1700FC9287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262814F39C1700FC9287 /* UIKit.framework */; };
 		7E4A262B14F39C1700FC9287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262A14F39C1700FC9287 /* Foundation.framework */; };
 		7E4A262D14F39C1700FC9287 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262C14F39C1700FC9287 /* CoreGraphics.framework */; };
@@ -21,6 +22,10 @@
 		7E4A264C14F39C1700FC9287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262A14F39C1700FC9287 /* Foundation.framework */; };
 		7E4A265414F39C1700FC9287 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E4A265214F39C1700FC9287 /* InfoPlist.strings */; };
 		7E4A265714F39C1800FC9287 /* LTE_BandsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A265614F39C1800FC9287 /* LTE_BandsTests.m */; };
+		7E4A266214F3B27200FC9287 /* BandInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4A266114F3B27200FC9287 /* BandInfo.m */; };
+		7E58CDEB15023E08005F27AF /* LTEBands.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E58CDEA15023E08005F27AF /* LTEBands.plist */; };
+		7E8DC9CC14FD1A0500D0831E /* CarrierInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8DC9CB14FD1A0500D0831E /* CarrierInfo.m */; };
+		7E9E5FB714F3EC9B0089050E /* BandInfoDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E5FB614F3EC9B0089050E /* BandInfoDataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,27 +39,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E097E9915143000005FDA95 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		7E4A262414F39C1700FC9287 /* LTE Bands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LTE Bands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4A262814F39C1700FC9287 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7E4A262A14F39C1700FC9287 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E4A262C14F39C1700FC9287 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7E4A263014F39C1700FC9287 /* LTE Bands-Info.plist */ = {isa = PBXFileReference; path = "LTE Bands-Info.plist"; sourceTree = "<group>"; };
+		7E4A263014F39C1700FC9287 /* LTE Bands-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LTE Bands-Info.plist"; sourceTree = "<group>"; };
 		7E4A263214F39C1700FC9287 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E4A263414F39C1700FC9287 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7E4A263614F39C1700FC9287 /* LTE Bands-Prefix.pch */ = {isa = PBXFileReference; path = "LTE Bands-Prefix.pch"; sourceTree = "<group>"; };
-		7E4A263714F39C1700FC9287 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		7E4A263614F39C1700FC9287 /* LTE Bands-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LTE Bands-Prefix.pch"; sourceTree = "<group>"; };
+		7E4A263714F39C1700FC9287 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7E4A263814F39C1700FC9287 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7E4A263B14F39C1700FC9287 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		7E4A263D14F39C1700FC9287 /* MasterViewController.h */ = {isa = PBXFileReference; path = MasterViewController.h; sourceTree = "<group>"; };
+		7E4A263D14F39C1700FC9287 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		7E4A263E14F39C1700FC9287 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		7E4A264014F39C1700FC9287 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		7E4A264014F39C1700FC9287 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		7E4A264114F39C1700FC9287 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		7E4A264814F39C1700FC9287 /* LTE BandsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LTE BandsTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4A264914F39C1700FC9287 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7E4A265114F39C1700FC9287 /* LTE BandsTests-Info.plist */ = {isa = PBXFileReference; path = "LTE BandsTests-Info.plist"; sourceTree = "<group>"; };
+		7E4A265114F39C1700FC9287 /* LTE BandsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LTE BandsTests-Info.plist"; sourceTree = "<group>"; };
 		7E4A265314F39C1700FC9287 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7E4A265514F39C1700FC9287 /* LTE_BandsTests.h */ = {isa = PBXFileReference; path = LTE_BandsTests.h; sourceTree = "<group>"; };
+		7E4A265514F39C1700FC9287 /* LTE_BandsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTE_BandsTests.h; sourceTree = "<group>"; };
 		7E4A265614F39C1800FC9287 /* LTE_BandsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTE_BandsTests.m; sourceTree = "<group>"; };
+		7E4A266014F3B27200FC9287 /* BandInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandInfo.h; sourceTree = "<group>"; };
+		7E4A266114F3B27200FC9287 /* BandInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BandInfo.m; sourceTree = "<group>"; };
+		7E58CDEA15023E08005F27AF /* LTEBands.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LTEBands.plist; sourceTree = "<group>"; };
+		7E8DC9CA14FD1A0500D0831E /* CarrierInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarrierInfo.h; sourceTree = "<group>"; };
+		7E8DC9CB14FD1A0500D0831E /* CarrierInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarrierInfo.m; sourceTree = "<group>"; };
+		7E9E5FB514F3EC9B0089050E /* BandInfoDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandInfoDataController.h; sourceTree = "<group>"; };
+		7E9E5FB614F3EC9B0089050E /* BandInfoDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BandInfoDataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +97,7 @@
 		7E4A261914F39C1700FC9287 = {
 			isa = PBXGroup;
 			children = (
+				7E097E9915143000005FDA95 /* TODO */,
 				7E4A262E14F39C1700FC9287 /* LTE Bands */,
 				7E4A264F14F39C1700FC9287 /* LTE BandsTests */,
 				7E4A262714F39C1700FC9287 /* Frameworks */,
@@ -116,11 +130,17 @@
 			children = (
 				7E4A263714F39C1700FC9287 /* AppDelegate.h */,
 				7E4A263814F39C1700FC9287 /* AppDelegate.m */,
-				7E4A263A14F39C1700FC9287 /* MainStoryboard.storyboard */,
+				7E4A266014F3B27200FC9287 /* BandInfo.h */,
+				7E4A266114F3B27200FC9287 /* BandInfo.m */,
+				7E8DC9CA14FD1A0500D0831E /* CarrierInfo.h */,
+				7E8DC9CB14FD1A0500D0831E /* CarrierInfo.m */,
+				7E9E5FB514F3EC9B0089050E /* BandInfoDataController.h */,
+				7E9E5FB614F3EC9B0089050E /* BandInfoDataController.m */,
 				7E4A263D14F39C1700FC9287 /* MasterViewController.h */,
 				7E4A263E14F39C1700FC9287 /* MasterViewController.m */,
 				7E4A264014F39C1700FC9287 /* DetailViewController.h */,
 				7E4A264114F39C1700FC9287 /* DetailViewController.m */,
+				7E4A263A14F39C1700FC9287 /* MainStoryboard.storyboard */,
 				7E4A262F14F39C1700FC9287 /* Supporting Files */,
 			);
 			path = "LTE Bands";
@@ -129,6 +149,7 @@
 		7E4A262F14F39C1700FC9287 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E58CDEA15023E08005F27AF /* LTEBands.plist */,
 				7E4A263014F39C1700FC9287 /* LTE Bands-Info.plist */,
 				7E4A263114F39C1700FC9287 /* InfoPlist.strings */,
 				7E4A263414F39C1700FC9287 /* main.m */,
@@ -229,6 +250,8 @@
 			files = (
 				7E4A263314F39C1700FC9287 /* InfoPlist.strings in Resources */,
 				7E4A263C14F39C1700FC9287 /* MainStoryboard.storyboard in Resources */,
+				7E58CDEB15023E08005F27AF /* LTEBands.plist in Resources */,
+				7E097E9A15143000005FDA95 /* TODO in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +290,9 @@
 				7E4A263914F39C1700FC9287 /* AppDelegate.m in Sources */,
 				7E4A263F14F39C1700FC9287 /* MasterViewController.m in Sources */,
 				7E4A264214F39C1700FC9287 /* DetailViewController.m in Sources */,
+				7E4A266214F3B27200FC9287 /* BandInfo.m in Sources */,
+				7E9E5FB714F3EC9B0089050E /* BandInfoDataController.m in Sources */,
+				7E8DC9CC14FD1A0500D0831E /* CarrierInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +364,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -436,6 +463,7 @@
 				7E4A265C14F39C1800FC9287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E4A265D14F39C1800FC9287 /* Build configuration list for PBXNativeTarget "LTE BandsTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +472,7 @@
 				7E4A265F14F39C1800FC9287 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -29,9 +29,17 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search (carrier or country)" id="pEF-ur-4nQ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="12" id="bZ5-ne-e7G"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LTEBandCell" textLabel="phq-AM-6qj" detailTextLabel="lgS-c2-sev" style="IBUITableViewCellStyleSubtitle" id="lJ0-d7-vTF">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
@@ -66,8 +74,20 @@
                             <outlet property="delegate" destination="12" id="15"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="LTE Bands" id="36"/>
+                    <navigationItem key="navigationItem" title="4G LTE Bands" id="36"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="7sk-zP-jDJ" id="tDm-Ec-kHi"/>
+                    </connections>
                 </tableViewController>
+                <searchDisplayController id="7sk-zP-jDJ">
+                    <connections>
+                        <outlet property="delegate" destination="12" id="EMO-wh-dh5"/>
+                        <outlet property="searchBar" destination="pEF-ur-4nQ" id="R2h-gk-tmC"/>
+                        <outlet property="searchContentsController" destination="12" id="UTo-wb-NrN"/>
+                        <outlet property="searchResultsDataSource" destination="12" id="rFd-gg-dWc"/>
+                        <outlet property="searchResultsDelegate" destination="12" id="4dR-x6-R4e"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>

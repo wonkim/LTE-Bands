@@ -106,9 +106,9 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>AT&amp;T</string>
 					<key>Country</key>
-					<string></string>
+					<string>US</string>
 				</dict>
 			</array>
 		</dict>
@@ -133,9 +133,15 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>SKT</string>
 					<key>Country</key>
-					<string></string>
+					<string>Korea</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>LG U+</string>
+					<key>Country</key>
+					<string>Korea</string>
 				</dict>
 			</array>
 		</dict>
@@ -214,9 +220,9 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>KT</string>
 					<key>Country</key>
-					<string></string>
+					<string>Korea</string>
 				</dict>
 			</array>
 		</dict>
@@ -295,9 +301,9 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>NTT DoCoMo</string>
 					<key>Country</key>
-					<string></string>
+					<string>Japan</string>
 				</dict>
 			</array>
 		</dict>
@@ -322,9 +328,9 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>Verizon</string>
 					<key>Country</key>
-					<string></string>
+					<string>US</string>
 				</dict>
 			</array>
 		</dict>
@@ -349,9 +355,9 @@
 			<array>
 				<dict>
 					<key>Name</key>
-					<string></string>
+					<string>Verizon</string>
 					<key>Country</key>
-					<string></string>
+					<string>US</string>
 				</dict>
 			</array>
 		</dict>

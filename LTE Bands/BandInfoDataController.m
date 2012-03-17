@@ -7,6 +7,7 @@
 //
 
 #import "BandInfoDataController.h"
+#import "CarrierInfo.h"
 
 @interface BandInfoDataController()
 - (void)initializeDefaultDataList;
@@ -23,14 +24,29 @@
     NSMutableArray *bandList = [[NSMutableArray alloc] init];
     self.bandInfoList = bandList;
     
-    BandInfo *band1 = [[BandInfo alloc] initWithBandNumber:1 bandName:@"800 Mhz" upperFreq1:800 upperFre2:810 downFreq1:820 downFreq2:830];
-    [band1 addCarrierWithName:@"KT" country:@"Korea"];
-    
-    BandInfo *band2 = [[BandInfo alloc] initWithBandNumber:2 bandName:@"850 Mhz" upperFreq1:850 upperFre2:810 downFreq1:820 downFreq2:830];
-    [band2 addCarrierWithName:@"SKT" country:@"Korea"];
-    
-    [self.bandInfoList addObject:band1];
-    [self.bandInfoList addObject:band2];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"LTEBands" ofType:@"plist"];
+    NSArray *bands = [[[NSDictionary alloc] initWithContentsOfFile:plistPath] valueForKey:@"Bands"];
+        
+    for (NSDictionary *bandDict in bands) {
+        NSNumber *bandNumber = [bandDict valueForKey:@"BandNumber"];
+        NSString *bandName = [bandDict valueForKey:@"BandName"];
+        NSNumber *upFreq1 = [bandDict valueForKey:@"UpFreq1"];
+        NSNumber *upFreq2 = [bandDict valueForKey:@"UpFreq2"];
+        NSNumber *downFreq1 = [bandDict valueForKey:@"DownFreq1"];
+        NSNumber *downFreq2 = [bandDict valueForKey:@"DownFreq2"];
+        NSNumber *bandWidth = [bandDict valueForKey:@"BandWidth"];
+        NSNumber *bandGap = [bandDict valueForKey:@"BandGap"];
+        NSArray *carriers = [bandDict valueForKey:@"Carriers"];
+        
+        BandInfo *band;
+        band = [[BandInfo alloc] initWithBandNumber:bandNumber.integerValue bandName:bandName upperFreq1:upFreq1.integerValue upperFre2:upFreq2.integerValue downFreq1:downFreq1.integerValue downFreq2:downFreq2.integerValue bandWidth:bandWidth.integerValue bandGap:bandGap.integerValue];
+        for (NSDictionary *carrierDict in carriers) {
+            NSString *carrier = [carrierDict valueForKey:@"Name"];
+            NSString *country = [carrierDict valueForKey:@"Country"];
+            [band addCarrierWithName:carrier country:country];
+        }
+        [self.bandInfoList addObject:band];
+    }
 }
 
 - (void)setBandInfoList:(NSMutableArray *)bandInfoList {
@@ -42,6 +58,7 @@
 - (id)init {
     if (self = [super init]) {
         [self initializeDefaultDataList];
+        filteredBandInfoList = [[NSMutableArray alloc] initWithCapacity:[self.bandInfoList count]];
     }
     return self;
 }
@@ -52,6 +69,38 @@
 
 - (BandInfo*)objectInBandInfoListAtIndex:(NSUInteger)index {
     return [self.bandInfoList objectAtIndex:index];
+}
+
+#pragma mark - Filtered Band Info List Handling
+
+- (void)setFilterString:(NSString *)filter
+{
+    [filteredBandInfoList removeAllObjects];
+     
+    for (BandInfo *bandInfo in self.bandInfoList) {
+        for (CarrierInfo *carrier in bandInfo.carriers) {
+            NSRange r = [carrier.name rangeOfString:filter options:NSCaseInsensitiveSearch];
+            if (r.location != NSNotFound) {
+                [filteredBandInfoList addObject:bandInfo];
+                break;
+            }
+            r = [carrier.country rangeOfString:filter options:NSCaseInsensitiveSearch];
+            if (r.location != NSNotFound) {
+                [filteredBandInfoList addObject:bandInfo];
+                break;
+            }
+        }
+    }
+}
+
+- (unsigned)countOfFilteredBandInfoList 
+{
+    return [filteredBandInfoList count];
+}
+
+- (BandInfo*)objectInFilteredBandInfoListAtIndex:(NSUInteger)index
+{
+    return [filteredBandInfoList objectAtIndex:index];
 }
 
 @end
