@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7E097E9A15143000005FDA95 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 7E097E9915143000005FDA95 /* TODO */; };
+		7E097E9F15156008005FDA95 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E097E9E15156008005FDA95 /* iAd.framework */; };
 		7E4A262914F39C1700FC9287 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262814F39C1700FC9287 /* UIKit.framework */; };
 		7E4A262B14F39C1700FC9287 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262A14F39C1700FC9287 /* Foundation.framework */; };
 		7E4A262D14F39C1700FC9287 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4A262C14F39C1700FC9287 /* CoreGraphics.framework */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		7E097E9915143000005FDA95 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		7E097E9E15156008005FDA95 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		7E4A262414F39C1700FC9287 /* LTE Bands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LTE Bands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4A262814F39C1700FC9287 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7E4A262A14F39C1700FC9287 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E097E9F15156008005FDA95 /* iAd.framework in Frameworks */,
 				7E4A262914F39C1700FC9287 /* UIKit.framework in Frameworks */,
 				7E4A262B14F39C1700FC9287 /* Foundation.framework in Frameworks */,
 				7E4A262D14F39C1700FC9287 /* CoreGraphics.framework in Frameworks */,
@@ -117,6 +120,7 @@
 		7E4A262714F39C1700FC9287 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E097E9E15156008005FDA95 /* iAd.framework */,
 				7E4A262814F39C1700FC9287 /* UIKit.framework */,
 				7E4A262A14F39C1700FC9287 /* Foundation.framework */,
 				7E4A262C14F39C1700FC9287 /* CoreGraphics.framework */,

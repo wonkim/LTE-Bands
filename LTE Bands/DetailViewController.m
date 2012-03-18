@@ -16,6 +16,7 @@
 
 @implementation DetailViewController
 @synthesize band = _band;
+@synthesize ad = _ad;
 
 #pragma mark - Managing the detail item
 
@@ -28,11 +29,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.ad = [[ADBannerView alloc] initWithFrame:CGRectZero];
+    self.ad.delegate = self;
+    self.ad.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
 }
 
 - (void)viewDidUnload
 {
     self.band = nil;
+    self.ad = nil;
     [super viewDidUnload];
 }
 
@@ -100,6 +105,23 @@
     }
     
     return cell;
+}
+
+#pragma mark - ADBannerViewDelegate
+
+- (BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave
+{
+    return YES;
+}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    self.tableView.tableHeaderView = banner;
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    self.tableView.tableFooterView = nil;
 }
 
 @end
