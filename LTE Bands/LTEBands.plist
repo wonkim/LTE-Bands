@@ -480,11 +480,11 @@
 			<key>UpFreq1</key>
 			<integer>1427</integer>
 			<key>UpFreq2</key>
-			<integer>1452</integer>
+			<integer>1447</integer>
 			<key>DownFreq1</key>
 			<integer>1475</integer>
 			<key>DownFreq2</key>
-			<integer>1500</integer>
+			<integer>1495</integer>
 			<key>BandWidth</key>
 			<integer>20</integer>
 			<key>BandGap</key>
@@ -505,15 +505,15 @@
 			<key>BandName</key>
 			<string>Lower 700 MHz, A+B+C</string>
 			<key>UpFreq1</key>
-			<integer>698</integer>
+			<integer>699</integer>
 			<key>UpFreq2</key>
 			<integer>716</integer>
 			<key>DownFreq1</key>
-			<integer>728</integer>
+			<integer>729</integer>
 			<key>DownFreq2</key>
 			<integer>746</integer>
 			<key>BandWidth</key>
-			<integer>18</integer>
+			<integer>17</integer>
 			<key>BandGap</key>
 			<integer>12</integer>
 			<key>Carriers</key>
@@ -847,7 +847,7 @@
 			<key>BandName</key>
 			<string>L Band</string>
 			<key>UpFreq1</key>
-			<integer>1625</integer>
+			<integer>1626</integer>
 			<key>UpFreq2</key>
 			<integer>1660</integer>
 			<key>DownFreq1</key>

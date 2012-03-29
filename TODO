@@ -1,11 +1,24 @@
 
 TODO 
-- Add iAds 
-- Think about beautifly
-- Check about memory leaks
+- Submit application v1
+- iPad LTE indicator
+- How to make animation for tableViewHeader? ==> No way?
 
 
 BACKLOG
-
+- Add LTE phone model data?
 
 DONE
+- Add LTE bands data (carriers)
+- Add iAds
+- Check about memory leaks
+- Think about beautifly
+- Application icon ==> Can I use 3GPP icon?
+- Check about Apple guide line to submit application
+
+WHAT's Learned?
+- Search View Controller
+- Story Board
+- Data controller concept
+- plist file handling
+- iAD

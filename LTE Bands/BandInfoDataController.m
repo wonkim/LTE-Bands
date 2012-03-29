@@ -9,6 +9,8 @@
 #import "BandInfoDataController.h"
 #import "CarrierInfo.h"
 
+#define LAUNCH_SCREEN_MODE 0
+
 @interface BandInfoDataController()
 - (void)initializeDefaultDataList;
 @end
@@ -20,10 +22,9 @@
 - (void)initializeDefaultDataList {
     // read data from plist file?
     // first, let's use sample data for testing
-    
     NSMutableArray *bandList = [[NSMutableArray alloc] init];
     self.bandInfoList = bandList;
-    
+#if !LAUNCH_SCREEN_MODE
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"LTEBands" ofType:@"plist"];
     NSArray *bands = [[[NSDictionary alloc] initWithContentsOfFile:plistPath] valueForKey:@"Bands"];
         
@@ -47,6 +48,7 @@
         }
         [self.bandInfoList addObject:band];
     }
+#endif
 }
 
 - (void)setBandInfoList:(NSMutableArray *)bandInfoList {
